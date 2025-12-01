@@ -1,0 +1,307 @@
+body {
+  background-color: #0d0d25;
+  margin: 0px;
+}
+
+.header {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.expirience {
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.child2 {
+  color: rgb(203 172 249);
+}
+
+.example-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.example {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #151530;
+  border-radius: 20px;
+  padding: 25px;
+  height: 85px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid rgb(30 41 59);
+  z-index: 1;
+}
+
+.example::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(white, #00bfff, white);
+  border-radius: 22px;
+  z-index: -1;
+  animation: spin-border 4s linear infinite;
+}
+
+.example::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: #151530;
+  border-radius: 18px;
+  z-index: -1;
+}
+
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.example img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.example h1 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.example p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+.apporch {
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+body {
+  background-color: #0d0d25;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.phase-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.phase-card {
+  width: 311px;
+  height: 500px;
+  border: 1px solid rgba(160, 160, 255, 0.3);
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 40, 0.6);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.phase-card button.phase-btn {
+  background: transparent;
+  color: #e0e0ff;
+  padding: 10px 30px;
+  border: 1px solid rgba(150, 150, 255, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.phase-card button.phase-btn:hover {
+  box-shadow: 0 0 10px rgba(160, 160, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.phase-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  color: white;
+  z-index: 3;
+}
+
+.phase-image .image-text {
+  position: relative;
+  z-index: 1;
+  margin-top: 150px;
+}
+
+.phase-image h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.phase-image p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.phase-card:hover .phase-image {
+  opacity: 1;
+  visibility: visible;
+}
+
+.phase-card:hover .phase-btn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.phase-card:nth-child(1):hover .phase-image {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #90ee90 0px,
+    #90ee90 10px,
+    #75d975 10px,
+    #75d975 20px
+  );
+}
+
+.phase-card:nth-child(2):hover .phase-image {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #b482ff 0px,
+    #b482ff 10px,
+    #9c60ff 10px,
+    #9c60ff 20px
+  );
+}
+
+.phase-card:nth-child(3):hover .phase-image {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #64c8ff 0px,
+    #64c8ff 10px,
+    #3cb6f0 10px,
+    #3cb6f0 20px
+  );
+}
+
+.text1 {
+  font-size: 14px;
+  color: #e0e0ff;
+  margin: 0;
+}
+
+.Knopka-container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d25;
+}
+
+.Knopka {
+  position: relative;
+  width: 238px;
+  height: 45px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(#3b82f6, #1e3a8a);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.Knopka::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: conic-gradient(white, #00bfff, white);
+  border-radius: 14px;
+  z-index: -1;
+  animation: spin-border 4s linear infinite;
+}
+
+.Knopka::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #0d0d25;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.telegram-Knopka {
+  width: 14px;
+  height: 14px;
+}
+
+.absolute-button {
+  text-align: center;
+}
